@@ -22,7 +22,7 @@ fun main() {
 
     scanner.use {
         when (it.nextInt()) {
-            in 0..< ADULT_AGE_MINIMUM -> println(minorMessage)
+            in ZERO..< ADULT_AGE_MINIMUM -> println(minorMessage)
             in ADULT_AGE_MINIMUM .. ADULT_AGE_MAXIMUM -> println(adultMessage)
             else -> println(seniorMessage)
         }
