@@ -1,4 +1,11 @@
+const val BOT_NAME = "Karn"
+const val BIRTH_YEAR = "2024"
+
 fun main() {
+    // Bot greeting
+    println("Hello! My name is $BOT_NAME.")
+    println("I was created in $BIRTH_YEAR.")
+
     val name = "Kotlin"
     println("Hello, $name!")
 
