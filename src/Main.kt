@@ -6,9 +6,6 @@ fun main() {
     println("Hello! My name is $BOT_NAME.")
     println("I was created in $BIRTH_YEAR.")
 
-    val name = "Kotlin"
-    println("Hello, $name!")
-
     for (i in 1..5) {
         println("i = $i")
     }
