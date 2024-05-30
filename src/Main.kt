@@ -16,10 +16,15 @@ fun main() {
     println("Hello! My name is $BOT_NAME.")
     println("I was created in $BIRTH_YEAR.")
 
+    println("Please, remind me your name.")
+    val userName = scanner.nextLine()
+    println("What a great name you have, $userName!")
+
     val adultMessage = "You are an adult"
     val minorMessage = "You are a minor"
     val seniorMessage = "You are a senior"
 
+    println("What is you age?")
     scanner.use {
         when (it.nextInt()) {
             in ZERO..< ADULT_AGE_MINIMUM -> println(minorMessage)
@@ -27,15 +32,6 @@ fun main() {
             else -> println(seniorMessage)
         }
     }
-
-    // Below was my solution, but I like the one above from community
-//    if (age in adultLowerBound..adultUpperBound) {
-//        println(adultMessage)
-//    } else if (age < adultLowerBound) {
-//        println(minorMessage)
-//    } else {
-//        println(seniorMessage)
-//    }
 
     for (i in 1..5) {
         println("i = $i")
