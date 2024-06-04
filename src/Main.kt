@@ -11,6 +11,14 @@ fun main() {
     // Create a Scanner object to read user input
     val scanner = Scanner(System.`in`)
 
+    // Splitting string of ints to array then summing
+    val inputString = scanner.nextLine()
+    val splitString = inputString.split(" ")
+    var sum = 0
+    splitString.forEach {
+        sum += it.toInt()
+    }
+
     // Read temperature in Celsius as a double
     val celsius = readln().toDouble()
 
