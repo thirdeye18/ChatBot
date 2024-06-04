@@ -1,6 +1,5 @@
-package src
-
 import java.util.Scanner
+import kotlin.math.round
 
 const val BOT_NAME = "Karn"
 const val BIRTH_YEAR = "2024"
@@ -11,6 +10,15 @@ const val ZERO = 0
 fun main() {
     // Create a Scanner object to read user input
     val scanner = Scanner(System.`in`)
+
+    // Read temperature in Celsius as a double
+    val celsius = readln().toDouble()
+
+    // Convert Celsius to Fahrenheit
+    val fahrenheit = (celsius * 9) / 5 + 32.0
+
+    // Print temperature in Fahrenheit rounded to nearest integer
+    println(round(fahrenheit).toInt())
 
     // Bot greeting
     println("Hello! My name is $BOT_NAME.")
